@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio 2025 | Priyanshi</title>
+    <link rel="stylesheet" href="style.css">
+    <!--faviconpng-->
+  <link rel="icon" href="./Gemini_Generated_Image_a2lbh5a2lbh5a2lb.png"  style="border-radius: 50%;" type="image/png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+    <style>
+       :root{
+      --emerald: #18422c;           /* emerald green */
+      --mustard: #d69e2e;          /* warm/dark yellow tint */
+      --cream: #f6efe6;            /* cream background */
+      --muted: #6b6b6b;
+      --dark: #0b0b0b;
+      --glass: rgba(255,255,255,0.45);
+    }
+        /* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(#00000000,#f1d9a4b6,#0a0a0a86); /* cream background */
+  color: #111;
+  line-height: 1.6;
+  position: relative;
+  overflow-x: hidden;
+ 
+}
+
+/* Plastic overlay */
+.plastic-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./Clear\ Plastic\ Vinyl\ -\ Gauge\ 8.jpeg") ;
+  opacity: 10;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  z-index: 1000;
+  background-repeat: no-repeat  center center fixed; background-size: cover ; background-position: center ;
+}
+
+/* Cover Section */
+.cover {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.cover h1 {
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: -2px;
+}
+.cover h1 span {
+  color: #dbb106; /* gold accent */
+}
+.cover .year {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+.cover .role {
+  margin: 15px 0;
+  font-weight: 300;
+}
+.cover .name {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+/* About */
+.about {
+  display: flex;
+  align-items: center;
+  padding: 4rem 10%;
+  gap: 2rem;
+}
+.about-img img {
+  width: 280px;
+  border-radius: 10px;
+  opacity: 100%;
+}
+.about-text {
+  max-width: 600px;
+}
+.about-text h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.about-text p {
+  margin-bottom: 1rem;
+}
+.about-text ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Projects */
+.projects {
+  padding: 4rem 10%;
+ 
+}
+.projects h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background: #fafafa;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.card h4 {
+  margin-bottom: 0.5rem;
+  color: #bfa84f;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #0a1f15);
+  color: #f8f5ec;
+  padding: 3rem 0;
+  border-top: 2px solid var(--mustard);
+  margin-top: 3rem;
+}
+footer h4, footer h5 {
+  color: var(--mustard);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+footer a {
+  color: #f8f5ec;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: var(--mustard);
+}
+footer li {
+  color: rgba(248, 245, 236, 0.85);
+  transition: color 0.3s ease;
+}
+footer li:hover {
+  color: var(--mustard);
+}
+/* ---------- SKILLS ---------- */
+    .skill-bar-title{ font-weight:700; margin-bottom:.25rem;}
+    .progress {
+      height: 12px;
+      border-radius: 999px;
+      background: rgba(0,0,0,0.06);
+      overflow: hidden;
+    }
+    .progress .progress-bar {
+      border-radius: 999px;
+      background: linear-gradient(90deg,var(--emerald), #18422c);
+    }
+
+    /* soft skill badges */
+    .soft-badge{
+      background: linear-gradient(90deg, rgba(214,158,46,0.12), rgba(214,158,46,0.04));
+      color: var(--mustard);
+      padding: .45rem .7rem;
+      border-radius: 999px;
+      font-weight:700;
+      margin-right:.5rem;
+      margin-bottom:.5rem;
+      display:inline-block;
+    }
+    .avatar {
+      width: 120px;       /* size of the avatar */
+      height: 120px;      /* keep it square */
+      border-radius: 50%; /* makes it a circle */
+      object-fit: cover;  /* ensures image fits nicely */
+      border: 2px solid #333; /* optional border */
+    }
+    /* ---------- ACHIEVEMENTS ---------- */
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      align-items: start;
+    }
+    .cert-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      background: rgba(255,255,255,0.9);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .cert-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 50px rgba(24,66,44,0.12);
+    }
+    .cert-thumb{
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      display: block;
+    }
+    .cert-meta {
+      padding: 0.9rem 1rem 1.2rem;
+    }
+    .cert-meta h6 { margin: 0 0 0.25rem 0; }
+    .cert-meta p { margin: 0; color: rgba(0,0,0,0.6); }
+
+    /* overlay used when hovering or if we want image-only cards */
+    .cert-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.25rem;
+      background: linear-gradient(180deg, rgba(24,66,44,0.0), rgba(24,66,44,0.45));
+      color: #fff;
+      opacity: 0;
+      transition: opacity 0.25s ease;
+      text-align: center;
+      padding: 1rem;
+    }
+    .cert-card:hover .cert-overlay { opacity: 1; }
+    .cert-overlay h6 { font-weight: 700; margin: 0; }
+    .cert-overlay p { margin: 0; font-size: 0.9rem; }
+    /* Gallery */
+    .gallery-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     gap: 20px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, cursor 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+    .gallery-grid img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 25px rgba(214, 158, 46, 0.25);
+    }
+
+    /* Modal styles */
+    .gallery-modal {
+      display: none;
+      position: fixed;
+      z-index: 2000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.95);
+      animation: fadeIn 0.3s ease;
+    }
+    
+    .gallery-modal.active {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-content-gallery {
+      max-width: 90%;
+      max-height: 90vh;
+      position: relative;
+      animation: zoomIn 0.3s ease;
+    }
+
+    .modal-content-gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 16px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: -40px;
+      right: 0;
+      background: var(--mustard);
+      color: #111;
+      border: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 24px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      font-weight: bold;
+    }
+
+    .modal-close-btn:hover {
+      background: #fff;
+      transform: scale(1.1);
+    }
+
+    .modal-nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(214, 158, 46, 0.8);
+      color: #111;
+      border: none;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      font-weight: bold;
+    }
+
+    .modal-nav-btn:hover {
+      background: var(--mustard);
+      transform: translateY(-50%) scale(1.1);
+    }
+
+    .modal-nav-btn.prev {
+      left: 15px;
+    }
+
+    .modal-nav-btn.next {
+      right: 15px;
+    }
+
+    .modal-counter {
+      position: absolute;
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: var(--mustard);
+      font-size: 14px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    h3{
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* about card styling */
+    .about-card {
+      background: rgba(255, 255, 255, 0.7);
+      padding: 2rem;
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .about-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(214, 158, 46, 0.15);
+    }
+    .about-card h5 {
+      color: var(--emerald);
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    /* project card enhanced */
+    .project-card {
+      background: rgba(255, 255, 255, 0.9) !important;
+      border: none !important;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 40px rgba(214, 158, 46, 0.2);
+    }
+    .project-thumb {
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px 12px 0 0 !important;
+      margin-bottom: 0 !important;
+    }
+    .project-card .card-body {
+      padding: 1.5rem;
+    }
+    .project-card .card-title {
+      color: var(--emerald);
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+    .project-card .card-text {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin-bottom: 1.25rem;
+    }
+    
+    /* project links styling */
+    .project-links {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .project-links a {
+      background: linear-gradient(135deg, var(--emerald), #2a5a3f);
+      color: white;
+      padding: 0.4rem 0.9rem;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: 1px solid var(--emerald);
+    }
+    .project-links a:hover {
+      background: var(--mustard);
+      color: #111;
+      border-color: var(--mustard);
+      transform: translateY(-2px);
+    }
+
+    /* social icons */
+    .social-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(214, 158, 46, 0.1), rgba(24, 66, 44, 0.1));
+      color: var(--mustard);
+      text-decoration: none;
+      margin-right: 1rem;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+    .social-icon:hover {
+      background: linear-gradient(135deg, var(--mustard), var(--emerald));
+      color: white;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(214, 158, 46, 0.3);
+    }
+
+    /* button theme */
+    .btn-theme {
+      background: linear-gradient(135deg, var(--emerald), #2a5a3f);
+      border: none;
+      border-radius: 8px;
+      padding: 0.6rem 1.5rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    .btn-theme:hover {
+      background: linear-gradient(135deg, var(--mustard), #c88a1f);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(214, 158, 46, 0.4);
+    }
+
+    /* section spacing */
+    section {
+      padding: 3rem 0;
+    }
+    hr {
+      margin: 3rem 0;
+      opacity: 0.2;
+      border-top: 2px solid var(--emerald);
+    }
+
+    /* responsive */
+    @media (max-width: 768px) {
+      .about {
+        flex-direction: column;
+        padding: 2rem 5%;
+      }
+      .about-img img {
+        width: 200px;
+      }
+      .cover h1 {
+        font-size: 3.5rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+    
+  
+
+  
+  <!-- Plastic sheet effect -->
+  <div class="plastic-overlay"></div>
+
+  <!-- Cover Section -->
+  <section class="cover">
+    <div class="cover-text">
+      <h1>PORT<br><span>FOLIO</span></h1>
+      <img src="./WhatsApp Image 2025-09-17 at 10.47.02 PM (1).jpeg" alt="My Avatar" class="avatar">
+      <p class="year">2025</p>
+      <p class="role">Learner • Developer • Artist</p>
+      <h2 class="name">Priyanshi Sharma</h2>
+    </div>
+  </section>
+  
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="about-img">
+      <img src="./WhatsApp Image 2025-09-17 at 10.47.02 PM (1).jpeg" alt="Priyanshi">
+    </div>
+    <div class="about-text">
+      <h3>About Me</h3>
+      <p>
+        I’m Priyanshi, a passionate learner exploring the world of programming, design, and creativity. Skilled in Python, Java, Kotlin, HTML, CSS, Bootstrap, and databases — while also being a dedicated sketch artist and painter.
+      </p>
+      <ul>
+        <li><strong>Education:</strong> Computer Science (B.Voc)</li>
+        <li><strong>Technical Skills:</strong> Python, Java, Kotlin, HTML, CSS, Bootstrap, JavaScript, SQL</li>
+        <li><strong>softwares worked on:</strong> NetBeans, Oracle APEX, Visual studio code, MySQL</li>
+      </ul>
+    </div>
+  </section>
+  <hr>
+  <section id="skills" class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 style="font-family:  'Playfair Display', serif ;">Skills</h3>
+        <p class="text-muted mb-0">Technical & soft skills — proficiency bars and badges</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- technical -->
+        <div class="col-lg-6">
+          <div class="about-card">
+            <h5>Technical Skills</h5>
+            <div class="mt-3">
+              <!-- skill row -->
+              <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                  <div class="skill-bar-title">HTML & CSS</div>
+                  <div class="text-muted small">90%</div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width:90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                  <div class="skill-bar-title">Bootstrap5</div>
+                  <div class="text-muted small">88%</div>
+                </div>
+                <div class="progress"><div class="progress-bar" style="width:88%"></div></div>
+              </div>
+
+              <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                  <div class="skill-bar-title">JavaScript</div>
+                  <div class="text-muted small">70%</div>
+                </div>
+                <div class="progress"><div class="progress-bar" style="width:70%"></div></div>
+              </div>
+
+              <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                  <div class="skill-bar-title">Python / JDBC & Databases</div>
+                  <div class="text-muted small">80%</div>
+                </div>
+                <div class="progress"><div class="progress-bar" style="width:80%"></div></div>
+              </div>
+
+              <div class="mb-0">
+                <div class="d-flex justify-content-between">
+                  <div class="skill-bar-title">Java(NetBeans)</div>
+                  <div class="text-muted small">75%</div>
+                </div>
+                <div class="progress"><div class="progress-bar" style="width:75%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- soft skills -->
+        <div class="col-lg-6">
+          <div class="about-card">
+            <h5>Soft Skills</h5>
+            <div class="mt-3">
+              <div class="mb-2">
+                <span class="soft-badge">Creativity</span>
+                <span class="soft-badge">Adaptability</span>
+                <span class="soft-badge">Teamwork</span>
+                <span class="soft-badge">Time Management</span>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+
+  <!-- Projects Grid -->
+ 
+
+    <!-- PROJECTS -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3>Projects Showcase</h3>
+        <p class="text-muted mb-0">Selected works — click to view demo or code</p>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Project card 1 -->
+        <div class="col">
+          <div class="project-card card h-100">
+            <img src="./ss2.png" class="project-thumb" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Responsive Portfolio Template</h5>
+              <p class="card-text text-muted">A responsive personal portfolio built using HTML, Bootstrap and a touch of JavaScript for interactivity. Includes projects, contact form, and animations.</p>
+              <div class="d-flex justify-content-between align-items-end">
+                <div class="project-links">
+                  <a href=" https://bizzy-boo05.github.io/Portfolio-template-1-/" title="Live Demo"><i class="bi bi-box-arrow-up-right"></i> Demo</a>
+                  <a href="https://bizzy-boo05.github.io/Portfolio-template-1-/" title="View Code"><i class="bi bi-code"></i> Code</a>
+                </div>
+                <small class="text-muted">HTML • Bootstrap</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project card 2 -->
+        <div class="col">
+          <div class="project-card card h-100">
+            <img src="./ss.png" class="project-thumb" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Interactive Digital Art Gallery</h5>
+              <p class="card-text text-muted">A web-based gallery transforming hand-drawn sketches into an immersive, interactive experience with smooth animations.</p>
+              <div class="d-flex justify-content-between align-items-end">
+                <div class="project-links">
+                  <a href="https://bizzy-boo05.github.io/Universe-in-my-eyes/" title="Live Demo"><i class="bi bi-box-arrow-up-right"></i> Demo</a>
+                  <a href="https://github.com/Bizzy-Boo05/Universe-in-my-eyes/blob/main/index.html" title="View Code"><i class="bi bi-code"></i> Code</a>
+                </div>
+                <small class="text-muted">HTML • CSS • JS</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project card 3 -->
+        <div class="col">
+          <div class="project-card card h-100">
+            <img src="./ss3.png" class="project-thumb" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">College Website Clone</h5>
+              <p class="card-text text-muted">A responsive static replica of the National P.G. College homepage with structured content and interactive elements.</p>
+              <div class="d-flex justify-content-between align-items-end">
+                <div class="project-links">
+                  <a href="https://national-pg-college-clone-site.vercel.app/" title="Live Demo"><i class="bi bi-box-arrow-up-right"></i> Demo</a>
+                  <a href="https://github.com/Bizzy-Boo05/National-pg-college-clone-site/blob/main/index.html" title="View Code"><i class="bi bi-code"></i> Code</a>
+                </div>
+                <small class="text-muted">HTML • CSS • JS</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project card 4 -->
+        <div class="col">
+          <div class="project-card card h-100">
+            <img src="./ss4.png" class="project-thumb" alt="Project 4">
+            <div class="card-body">
+              <h5 class="card-title">YouTube Upload Interface</h5>
+              <p class="card-text text-muted">A functional mockup simulating YouTube's video upload interface with drag-and-drop file handling and preview.</p>
+              <div class="d-flex justify-content-between align-items-end">
+                <div class="project-links">
+                  <a href="https://bizzy-boo05.github.io/youtube-video-upload-page/" title="Live Demo"><i class="bi bi-box-arrow-up-right"></i> Demo</a>
+                  <a href="https://github.com/Bizzy-Boo05/youtube-video-upload-page/blob/main/index.html" title="View Code"><i class="bi bi-code"></i> Code</a>
+                </div>
+                <small class="text-muted">HTML • CSS • JS</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <!-- ACHIEVEMENTS / EXPERIENCE -->
+  <section id="achievements" class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 style="font-family: 'Playfair Display', serif;">Achievements & Certificates</h3>
+        <p class="text-muted mb-0">Highlights from your learning and work</p>
+      </div>
+
+      <div class="cert-grid">
+        <div class="cert-card">
+          <a href="powerbi.png" target="_blank" rel="noopener noreferrer">
+            <img src="powerbi.png" alt="Power BI Certificate" class="cert-thumb">
+            <div class="cert-overlay">
+              <h6>Power BI Certificate</h6>
+              <p>National P.G. College / Simplilearn — 2025</p>
+            </div>
+          </a>
+          <div class="cert-meta">
+            <h6>Power BI Certificate</h6>
+            <p class="small">National P.G. College / Simplilearn — 2025</p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <a href="./digital.india.jpeg" target="_blank" rel="noopener noreferrer">
+            <img src="./digital.india.jpeg" alt="Digital India" class="cert-thumb">
+            <div class="cert-overlay">
+              <h6>Digital India Talk</h6>
+              <p>University of Lucknow — 2025</p>
+            </div>
+          </a>
+          <div class="cert-meta">
+            <h6>Digital India Talk Show</h6>
+            <p class="small">University of Lucknow — 2025</p>
+          </div>
+        </div>
+
+        
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h3 class="text-center mb-5">Art Gallery</h3>
+      <div class="gallery-grid">
+        <img src="./fp (1).jpeg" alt="Art 1" class="gallery-img" data-index="0">
+        <img src="./art1.jpeg" alt="Art 2" class="gallery-img" data-index="1">
+        <img src="./ske.jpeg" alt="Art 3" class="gallery-img" data-index="2">
+        <img src="./ske(2).jpeg" alt="Art 4" class="gallery-img" data-index="3">
+        <img src="./ske(3).jpeg" alt="Art 5" class="gallery-img" data-index="4">
+      </div>
+    </div>
+  </section>
+  <hr>
+
+  <!-- Gallery Modal -->
+  <div id="galleryModal" class="gallery-modal">
+    <div class="modal-content-gallery">
+      <button class="modal-close-btn" id="modalClose">&times;</button>
+      <button class="modal-nav-btn prev" id="prevBtn"><i class="bi bi-chevron-left"></i></button>
+      <img id="modalImage" src="" alt="Gallery Image">
+      <button class="modal-nav-btn next" id="nextBtn"><i class="bi bi-chevron-right"></i></button>
+      <div class="modal-counter">
+        <span id="currentIndex">1</span> / <span id="totalImages">5</span>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- CONTACT / FOOTER -->
+  <footer id="contact">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6">
+          <h4>Contact Me</h4>
+          <p class="text" style="color: #6b6b6b;">Want to collaborate, ask about a project, or see my sketchbook? Send a message — I usually reply within a few days.</p>
+
+          <form id="contactForm" class="row g-3 needs-validation" novalidate>
+            <div class="col-md-6">
+              <label for="name" class="form-label small">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your name" required>
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label small">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+              <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+            <div class="col-12">
+              <label for="message" class="form-label small">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Write your message..." required></textarea>
+              <div class="invalid-feedback">Please write a message.</div>
+            </div>
+            <div class="col-12 d-flex gap-2">
+              <button type="submit" class="btn btn-theme">Send Message</button>
+            </div>
+          </form>
+
+        </div>
+
+        <div class="col-lg-6">
+          <h5>Details & Social</h5>
+          <ul class="list-unstyled mt-3">
+            <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>Lucknow, Uttar Pradesh, India</li>
+            <li class="mb-2"><i class="bi bi-envelope me-2"></i><a href="priyanshi.learns@gmail.com">priyanshi.learns@gmail.com</a></li>
+            <li class="mb-2"><i class="bi bi-phone me-2"></i>+91 80047 77888</li>
+          </ul>
+
+          <div class="mt-3">
+            <a class="social-icon" href="https://www.github.com/Bizzy-Boo05" title="GitHub"><i class="bi bi-github"></i></a>
+            <a class="social-icon" href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a class="social-icon" href="https://instagram.com/tinted_truths" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a class="social-icon" href="#" title="Twitter"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (bundle includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Small JS: contact validation and year -->
+  <script>
+    // populate copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // bootstrap form validation (client-side)
+    (function () {
+      'use strict'
+      const forms = document.querySelectorAll('.needs-validation')
+      Array.from(forms).forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          } else {
+            event.preventDefault()
+            // Here you can add AJAX/fetch to send form data to backend or email service
+            alert('Thanks — message sent (demo). Replace alert with real submit logic.');
+            form.reset();
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+
+    // Gallery Modal Functionality
+    const galleryImgs = document.querySelectorAll('.gallery-img');
+    const galleryModal = document.getElementById('galleryModal');
+    const modalImage = document.getElementById('modalImage');
+    const modalClose = document.getElementById('modalClose');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const currentIndexSpan = document.getElementById('currentIndex');
+    const totalImagesSpan = document.getElementById('totalImages');
+
+    let currentIndex = 0;
+    const galleryArray = Array.from(galleryImgs);
+
+    // Open modal when image is clicked
+    galleryImgs.forEach((img, index) => {
+      img.addEventListener('click', function() {
+        currentIndex = index;
+        openModal();
+      });
+    });
+
+    // Close modal
+    modalClose.addEventListener('click', closeModal);
+    galleryModal.addEventListener('click', function(e) {
+      if (e.target === galleryModal) {
+        closeModal();
+      }
+    });
+
+    // Previous image
+    prevBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      currentIndex = (currentIndex - 1 + galleryArray.length) % galleryArray.length;
+      updateModal();
+    });
+
+    // Next image
+    nextBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      currentIndex = (currentIndex + 1) % galleryArray.length;
+      updateModal();
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+      if (galleryModal.classList.contains('active')) {
+        if (e.key === 'ArrowLeft') {
+          currentIndex = (currentIndex - 1 + galleryArray.length) % galleryArray.length;
+          updateModal();
+        } else if (e.key === 'ArrowRight') {
+          currentIndex = (currentIndex + 1) % galleryArray.length;
+          updateModal();
+        } else if (e.key === 'Escape') {
+          closeModal();
+        }
+      }
+    });
+
+    function openModal() {
+      galleryModal.classList.add('active');
+      updateModal();
+    }
+
+    function closeModal() {
+      galleryModal.classList.remove('active');
+    }
+
+    function updateModal() {
+      const img = galleryArray[currentIndex];
+      modalImage.src = img.src;
+      modalImage.alt = img.alt;
+      currentIndexSpan.textContent = currentIndex + 1;
+    }
+  </script>
+</body>
+</html>
